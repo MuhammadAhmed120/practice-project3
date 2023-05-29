@@ -1,0 +1,199 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bar-con{
+    background: linear-gradient(#00070e, #012e64);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    height: 550px;
+}
+
+.nav-bar{
+    border-bottom: 1px solid rgba(123, 123, 123, 0.2);
+    display: flex;
+    width: 75%;
+    height: 70px;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 10%;
+    opacity: 0.4;
+}
+.logo-img{
+    opacity: 0.8;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+a{
+    box-sizing: border-box;
+    transition: 0.2s ease;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 10px;
+}
+
+a:hover{
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 5px;
+}
+
+.ad-select{
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #b73439;
+    border-radius: 5px;
+    /* font-size: 18px; */
+}
+
+.ad-select:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.ad-select>option{
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+.search-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+    width: 70%;
+}
+
+.heading{
+    color: white;
+}
+
+.heading>h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.heading>h3{
+    margin-top: -25px;
+    font-weight: lighter;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.search-bar{
+    width: 100%;
+    padding: 17px 0px;
+    margin: 0;
+    padding-left: 15px;
+    font-size: 18px;
+    border: none;
+    border-right: 1px solid #a8a8a8;
+    border-top-left-radius: 5px;
+    transition: left 0.5s;
+    outline: none;
+}
+
+.search-bar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.cities{
+    padding: 16.5px 0;
+    margin: 0;
+    padding-right: 80px;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    border-right: 1px solid #a8a8a8;
+    outline: none;
+}
+
+.price-range{
+    padding: 16.5px 0;
+    padding-right: 80px;
+    padding-left: 5px;
+    border: none;
+    margin: 0;
+    font-size: 18px;
+    outline: none;
+}
+
+.fa-magnifying-glass{
+    margin: 0;
+    background-color: #3eb549;
+    color: white;
+    font-size: 25px;
+    padding: 15px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.filter-button{
+    padding: 10px 20px;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    border: 1px solid white;
+    outline: none;    
+    cursor: pointer;
+}
+
+.filter-button:hover{
+    border: 1px solid #a6a6a6;
+}
+
+.fa-chevron-right{
+    color: white;
+    font-size: 8px;
+    margin-left: 8px;
+}
