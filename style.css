@@ -24,6 +24,19 @@ body{
     background: transparent;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    animation-name: list-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes list-animation {
+    from{
+        top: -40%;
+    }
+    to{
+        top: 0%;
+    }
 }
 
 .nav-logo{
@@ -57,20 +70,27 @@ ul li{
 ul li a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: lighter;
 }
 
 a{
     box-sizing: border-box;
-    transition: 0.2s ease;
-    border-bottom: 1px solid #e1e1e1;
-    padding: 0 10px;
+    transition: 0.1s ease;
 }
 
-a:hover{
-    border-bottom: 1px solid #e1e1e1;
-    padding: 0 5px;
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width 0.3s;
 }
 
 .ad-select{
@@ -80,7 +100,6 @@ a:hover{
     color: white;
     background-color: #b73439;
     border-radius: 5px;
-    /* font-size: 18px; */
 }
 
 .ad-select:hover{
@@ -113,7 +132,22 @@ a:hover{
 .heading>h1{
     font-size: 40px;
     font-weight: lighter;
+    animation-name: h1-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
+
+@keyframes h1-animation{
+    from{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .heading>h3{
     margin-top: -25px;
     font-weight: lighter;
@@ -156,9 +190,11 @@ a:hover{
     border: none;
     border-right: 1px solid #a8a8a8;
     outline: none;
+    cursor: pointer;
 }
 
 .price-range{
+    cursor: pointer;
     padding: 16.5px 0;
     padding-right: 80px;
     padding-left: 5px;
@@ -174,8 +210,14 @@ a:hover{
     color: white;
     font-size: 25px;
     padding: 15px 25px;
+    cursor: pointer;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.fa-magnifying-glass:hover{
+    background-color: #1eb02d;
 }
 
 .filter-button{
@@ -183,9 +225,10 @@ a:hover{
     background: transparent;
     color: white;
     font-size: 12px;
-    border: 1px solid white;
     outline: none;    
     cursor: pointer;
+    border: 1px solid #ffffff;
+    transition: 0.2s ease;
 }
 
 .filter-button:hover{
@@ -196,4 +239,5 @@ a:hover{
     color: white;
     font-size: 8px;
     margin-left: 8px;
+    transition: 0.2s ease;
 }
