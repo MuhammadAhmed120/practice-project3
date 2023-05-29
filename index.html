@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PakWheels - Buy and Sell Cars</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="bar-con">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="Images/logo.png" alt="PakWheels logo" class="logo-img">
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li><a href="">Used Cars</a></li>
+                    <li><a href="">New Cars</a></li>
+                    <li><a href="">Bikes</a></li>
+                    <li><a href="">Auto Store</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">Forums</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </div>
+
+            <div class="post">
+                <select class="ad-select">
+                    <option value="" hidden>Post an Ad</option>
+                    <option value="car">Sell Your Car</option>
+                    <option value="bike">Sell Your Bike</option>
+                    <option value="accessory">Sell Accessory</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="search-con">
+            <div class="heading">
+                <h1>Find Used Cars in Pakistan</h1>
+                <h3>With thousands of cars, we have just the right one for you</h3>
+            </div>
+
+            <div class="search">
+                <input class="search-bar" type="search" placeholder="Car Make or Model" size="45">
+
+                <select class="cities">
+                    <option value="" hidden>All Cities</option>
+                    <optgroup label="Popular Cities">
+                        <option value="karcahi">Karachi</option>
+                        <option value="islamabad">Islamabad</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="rawalpindi">Rawalpindi</option>
+                        <option value="peshawar">Peshawar</option>
+                    </optgroup>
+                </select>
+
+                <select class="price-range">
+                    <option value="" hidden>Price Range</option>
+                    <option value="5">5 lacs</option>
+                    <option value="10">10 lacs</option>
+                    <option value="20">20 lacs</option>
+                    <option value="30">30 lacs</option>
+                    <option value="40">40 lacs</option>
+                    <option value="50">50 lacs</option>
+                </select>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="filter">
+                <button class="filter-button">Advanced Filter<i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
